@@ -2,14 +2,15 @@ export const ema = (
   data: number[] = [],
   length: number
 ): (undefined | number)[] => {
-  if (length <= 1 || length > data.length) return data
+  if (length <= 1) return data
+  if (length > data.length) return new Array(data.length)
 
   const alpha = 2 / (length + 1)
-  const emas = [data[0]]
+  const emas = [data.shift()!]
 
-  for (var i = 1; i < data.length; i++) {
-    emas.push(data[i] * alpha + emas[i - 1] * (1 - alpha))
-  }
+  data.forEach((value, index) => {
+    emas.push(value * alpha + emas[index] * (1 - alpha))
+  })
 
   return emas
 }

@@ -15,7 +15,8 @@
     "@types/node": "^18.15.3",
     "esbuild": "^0.17.12",
     "prettier": "^2.8.5",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.7"
   },
   "prettier": {
     "importOrder": [
@@ -32,6 +33,7 @@
     "pluginSearchDirs": false
   },
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "test": "vitest"
   }
 }
