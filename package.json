@@ -34,6 +34,7 @@
   },
   "scripts": {
     "build": "node build.mjs",
-    "test": "vitest"
+    "test": "vitest",
+    "prepack": "npm run build"
   }
 }
