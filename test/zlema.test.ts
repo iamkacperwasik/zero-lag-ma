@@ -21,6 +21,37 @@ it("should return untouched array when length is equal to 1", () => {
 
 it("should match expected output", () => {
   expect(zlema([1, 2, 3, 4, 5], 4)).toEqual([undefined, 3, 3.4, 4.04, 4.824])
+  expect(zlema([1, 2, 3, 4, 5], 5)).toEqual([
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ])
+  expect(zlema([1, 2, 3, 4, 5, 6], 5)).toEqual([
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ])
+  expect(zlema([1, 2, 3, 4, 5, 6], 6)).toEqual([
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ])
+  expect(zlema([1, 2, 3, 4, 5, 6], 7)).toEqual([
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ])
   expect(zlema([1, 2, 3, 4, 5, 6, 7], 5)).toEqual([
     undefined,
     undefined,
