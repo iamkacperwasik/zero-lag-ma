@@ -1,12 +1,12 @@
 {
-  "name": "",
-  "version": "0.0.0",
-  "type": "module",
+  "name": "zero-lag-ma",
+  "version": "1.0.0",
   "main": "dist/index.js",
-  "repository": "https://github.com/iamkacperwasik/.git",
+  "repository": "https://github.com/iamkacperwasik/zero-lag-ma.git",
   "author": "Kacper Wąsik <kacper@wasik.me>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "files": [
     "dist/"
   ],
@@ -30,5 +30,8 @@
       "@trivago/prettier-plugin-sort-imports"
     ],
     "pluginSearchDirs": false
+  },
+  "scripts": {
+    "build": "node build.mjs"
   }
 }
