@@ -1,4 +1,4 @@
-import {ema} from "./ema"
+import {ema} from "src/ema.js"
 
 const zlema = (data: number[] = [], length: number): (undefined | number)[] => {
   if (length <= 1 || length > data.length) return data

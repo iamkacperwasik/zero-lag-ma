@@ -3,8 +3,9 @@ import * as esbuild from "esbuild"
 await esbuild.build({
   entryPoints: ["./src/index.ts"],
   outfile: "./dist/index.js",
-  // drop: ["console", "debugger"],
+  drop: ["console", "debugger"],
   minify: true,
   treeShaking: true,
-  target: ["node12"],
+  bundle: true,
+  platform: "neutral",
 })
