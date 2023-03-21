@@ -8,5 +8,6 @@
     "strict": true,
     "checkJs": true,
     "types": ["vitest/globals"]
-  }
+  },
+  "exclude": ["node_modules", "lib/index.js"]
 }

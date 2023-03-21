@@ -1,15 +1,16 @@
 {
   "name": "zero-lag-ma",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/iamkacperwasik/zero-lag-ma.git",
   "author": "Kacper Wąsik <kacper@wasik.me>",
   "license": "MIT",
   "private": false,
   "type": "module",
   "files": [
-    "dist/"
+    "lib/"
   ],
+  "types": "lib/index.d.ts",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/node": "^18.15.3",
@@ -20,7 +21,6 @@
   },
   "prettier": {
     "importOrder": [
-      "^util/(.*)$",
       "^[./]"
     ],
     "importOrderSeparation": true,
