@@ -12,7 +12,6 @@
   ],
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/node": "^18.15.3",
     "esbuild": "^0.17.12",
     "prettier": "^2.8.5",
@@ -20,17 +19,8 @@
     "vitest": "^0.29.7"
   },
   "prettier": {
-    "importOrder": [
-      "^[./]"
-    ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true,
     "bracketSpacing": false,
-    "semi": false,
-    "plugins": [
-      "@trivago/prettier-plugin-sort-imports"
-    ],
-    "pluginSearchDirs": false
+    "semi": false
   },
   "scripts": {
     "build": "node build.mjs",
