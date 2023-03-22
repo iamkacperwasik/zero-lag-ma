@@ -1,1 +1,4 @@
-export type zlema = (data: number[], length: number) => (undefined | number)[]
+export declare const zlema: (
+  data: number[],
+  length: number
+) => (undefined | number)[]
