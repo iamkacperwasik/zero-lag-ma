@@ -12,6 +12,7 @@
     "zero lag moving average",
     "zlema"
   ],
+  "description": "A Javascript implementation of zero lag exponential moving average indicator created by John Ehlers and Ric Way.",
   "files": [
     "lib/"
   ],
