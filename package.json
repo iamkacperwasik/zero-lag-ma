@@ -7,6 +7,11 @@
   "license": "MIT",
   "private": false,
   "type": "module",
+  "keywords": [
+    "moving average",
+    "zero lag moving average",
+    "zlema"
+  ],
   "files": [
     "lib/"
   ],
